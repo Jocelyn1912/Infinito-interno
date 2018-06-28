@@ -1,0 +1,747 @@
+.active {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.inactive { color: #000; }
+
+body {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+nav#navigation {
+  left: 0;
+  top: 0;
+  padding: 5px 0;
+  height: 45px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  background-color: #34495E;
+  overflow-y: hidden;
+  z-index: 1000;
+}
+
+ul.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+ul.menu li {
+  outline: none;
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+ul.menu li a {
+  padding: 20px;
+  text-decoration: none;
+  color:#fff;
+}
+
+ul.menu li a:hover {
+  background-color: #E74C3C;
+}
+
+ul.menu li a:focus { outline: none; }
+
+/************************************************************************************************
+Estilos home
+************************************************************************************************/
+#section_1, #section_2, #section_3, #section_4, #section_5, #section_6, #section_7 {
+  width:100%;
+  height: auto;
+ font-family: 'Montserrat', sans-serif!important;
+}
+
+
+/*Sección desafío, primera sección*/
+#section_1 .subSection1 {
+background-image: url(https://d1dxeoyimx6ufk.cloudfront.net/uploads/NA5/OD7908/914DE87A.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color:#000;
+}
+
+.logoDesafio{
+  padding-right: 0%;
+  margin-top: 15%;
+  width:40%;
+}
+
+.parrafoSeccion {
+  font-size: 18px;
+  text-align: center;
+}
+
+.subSection1 .parrafoSeccion {
+  margin-top: 3%;
+  padding:6% 10%;
+  text-align: justify;
+}
+
+.titulos {
+  font-size: 35px;
+  padding: 0;
+  text-align: center;
+}
+
+.subSection12{
+  background-color: #fff;
+  padding: 0 10%;
+}
+
+.colorRojo{
+  color:#E04646;
+}
+
+.subTituloSeccion12 {
+  color: #E04646;
+}
+
+.contenedorParrafoSeccion1 hr {
+  width: 150px;
+  display: inline-block;
+}
+
+.contenedorRayos{
+  text-align: center;
+  padding: 2% 0;
+}
+
+.textoMayusculas {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*Escondiendo Login*/
+.enterprise_login_widget{
+display:none;
+}
+
+/*Seteando el row de bootstrap*/
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/*Segunda sección*/
+#section_2 {
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+.tituloSlider {
+  font-size: 35px;
+  padding: 0;
+}
+
+.parrafoSlider{
+  font-size: 18px;
+}
+
+/*Estilos banner*/
+
+/* Contenedor de las diapositivas*/
+.slideshow {
+  width: 100%;
+  position: relative;
+}
+
+.slider li, ul {
+  width: 100%;
+}
+
+.slider li {
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.slider li img {
+  width: 100%;
+}
+
+/* Texto de las diapositivas*/
+.slider .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 50px 15px 100px;
+  /*Centrar*/
+  display: flex;
+  /*Posisionando textos en columnas*/
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  /*z-index: 1;*/
+}
+
+.pagination li {
+  font-size: 18px;
+  margin: 2px 5px;
+  color: #858585;
+  cursor: pointer;
+}
+
+/*Flechas*/
+.left, .right {
+  position: absolute;
+  top: 40%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color:#FAAE34;
+  font-size: 45px;
+  cursor: pointer;
+  /*z-index: 2;*/
+  background: rgba(0,0,0,0.2);
+}
+
+.left:hover, .right:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.left {
+  left: 30px;
+}
+
+.right {
+  right: 30px;
+}
+
+.img-responsive{
+    display: inline-block !important;
+}
+
+.textoCaption {
+  background: rgba(0,0,0,0.7);
+  width: 75%;
+  display: inline-block;
+  padding: .5% 2%;
+}
+
+/*Sección cómo participar, tercera sección*/
+#section_3 {
+  background-color: #fff;
+
+}
+
+#section_3 .col-xs-6, #section_3 .col-md-3{
+  padding:0!important;
+}
+
+.iconoCheckParticipar{
+  border-bottom: solid 5px #BB2929;
+}
+
+.iconoCuadernoParticipar{
+  border-bottom: solid 5px #FEC01F;
+}
+
+.iconoComputadorParticipar{
+  border-bottom: solid 5px #2CAEA3;
+}
+
+.iconoComentar{
+  border-bottom: solid 5px #4A5493;
+}
+
+
+.iconoCheckParticipar, .iconoCuadernoParticipar, .iconoComputadorParticipar {
+  vertical-align: bottom;
+}
+
+.contenedorIconosParticipar{
+  padding: 2% 8%;
+}
+
+.tituloParticipar {
+  color: #E04646;
+}
+.parrafoParticipar{
+  padding: 7%;
+}
+
+.linkAParticipando:link, .linkAParticipando:hover, .linkAParticipando:visited, .linkAParticipando:active, a {
+    text-decoration:none;
+    color:#fff;
+}
+
+.linkAParticipando{
+  font-size:18px;
+  background-color:#4A5493;
+  padding:12px 37px;
+}
+
+.linkAParticipando:hover{
+  color: #4A5493;
+  background-color:#fff;
+  border: solid 2px #4A5493
+}
+
+.contenedorLinkAParticipando {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.contenedorDescargarBases{
+  padding-top: 3%;
+}
+
+.descargarBases:link, .descargarBases:hover, .descargarBases:visited, .descargarBases:active, a {
+    text-decoration:none;
+}
+
+#section_3 .descargarBases{
+  font-size:18px;
+  padding:12px 37px;
+  color:#BB2929;
+  border: solid 2px #BB2929;
+}
+
+#section_3 .descargarBases:hover {
+  color: #fff;
+  background-color:#BB2929;
+  border: solid 2px #fff
+}
+.contenedorCategoriasPrincipal{
+  background-color: #fff;
+}
+
+.contenedorCategorias{
+  width: 20%;
+  float:left;
+}
+
+.categorias{
+  height: 320px;
+  padding: 90px 10px 30px 12px;
+}
+
+.textoCategorias{
+  color:#fff;
+}
+
+.parrafoCategorias{
+  color: #797979;
+  padding: 30px 15px 0 15px;
+  margin: 0;
+}
+
+.iconosCategorias{
+  margin: 25px 0;
+}
+
+.categoriaMonitoreo{
+  background-color:#4A5493;
+}
+
+.categoriaPlanes{
+  background-color:#29958C;
+}
+
+.categoriaModelo{
+  background-color:#7175C8;
+}
+
+.categoriaComunicación{
+  background-color:#FEC01F;
+}
+
+.categoriaGestion{
+  background-color:#BB2929;
+}
+
+#ciudad img{
+  width:100%;
+}
+
+/*Sección etapas, cuarta sección*/
+#section_4 {
+  background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/fondoVerde4taSeccion.png);
+}
+
+.contenedorCadaEtapa hr{
+  width: 100px;
+  display: inline-block;
+  margin:0;
+  color:#2CAEA3;
+
+}
+
+.numeroEtapa{
+  display:inline-block;
+  background-color: #FEC01F;
+  margin:0;
+  font-size: 18px;
+  color: #fff;
+  padding:5px 25px;
+}
+
+.parrafoEtapas{
+  font-size: 18px;
+  margin:0;
+}
+
+.parrafoEtapasFecha{
+  font-size: 18px;
+  padding-top: 12px;
+}
+
+.contenedorBuzon{
+  background-color: #56BEB5;
+  padding: 10% 5%;
+  color: #fff;
+}
+
+.tituloEtapas{
+  color:#fff;
+}
+
+.espacioEtapas {
+  padding: 15px 0px 0px 0px;
+}
+
+.contenedorActivo{
+  background-color: #FEC01F;
+  color:#fff;
+}
+
+.numeroEtapaActiva{
+  background-color: #4A5493;
+}
+
+/*Sección Talleres, quinta sección*/
+.contenedorSection5 {
+  background-color:#2CAEA3;
+  background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/Fondo2Amarillo.png);
+  background-size: cover;
+  background-position: center top;
+  padding-top:10%;
+  color:#fff;
+}
+
+
+.parrafoTaller{
+  padding: 30px 0px;
+}
+.textoAzul {
+  color:#4A5493;
+  margin: 2% 0;
+}
+
+.contenedorTaller{
+  padding: 0px 4%;
+}
+
+h2 {
+  font: 33px sans-serif;
+  text-align: center;
+}
+h2.linea {
+  position: relative;
+  z-index: 1;
+  margin-top:0!important;
+}
+h2.linea:before {
+  border-top: 2px solid #fff;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.contenedorSection5 .formularioDatosTaller{
+  padding: 0 20%;
+  text-align: left;
+}
+
+#section_5 .formularioDatosTaller .correoDesafio{
+  color: #4A5493!important;
+  text-decoration: underline!important;
+}
+.alignContent .pregunta{
+  width:180px;
+  text-align:right;
+  padding-top: 5px;
+}
+
+.alignContent .respuesta{
+  padding-left: 5%;
+  padding-top: 5px;
+}
+
+.alignContent{
+  vertical-align:top;
+  padding-top:0;
+}
+
+.fila{
+  text-align: left;
+  width:50%;
+}
+
+.ContinuacioncontenedorSection5{
+  background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/fondo_00azulArriba.png);
+  background-size: cover;
+  background-position: center top;
+  height: 150px;
+  margin-top: -45px;
+}
+
+/*Sección premios, sexta sección*/
+.contenedorSection6{
+  background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/fondo_00azulSinOndaso.png);
+  background-size: cover;
+  background-position: center top;
+  color:#fff;
+padding-bottom:18px;
+}
+
+#section_6 .contenedorCadaPremio{
+  text-align: left;
+  font-size: 15px;
+  padding: 0 1%;
+}
+
+#section_6 .titulos{
+  padding-top: 50px;
+}
+
+#section_6 hr{
+  width:70px;
+}
+
+.parrafoSeccionPremio{
+margin:0!important;
+}
+
+.contenedorPremios{
+  padding: 1% 5% 0% 5%;
+}
+.imgIconoPremios{
+  width: 70px;
+  height: auto;
+  padding: 5% 0;
+}
+
+.btnPremiosParticipar{
+  font-size: 30px;
+  color: #fff;
+  background-color:#FEC01F;
+  padding: 10px 250px;
+margin-top:1%;
+}
+
+.btnPremiosParticipar:link, .btnPremiosParticipar:visited, .btnPremiosParticipar:active, a {
+    text-decoration:none;
+    color:#fff;
+}
+
+.btnPremiosParticipar:hover {
+  color: #2CAEA3;
+  background-color:#fff;
+  border: solid 2px #2CAEA3;
+}
+
+.iconoBTNParticipar{
+  width: 100px;
+  height: auto;
+  padding-bottom: 1%;
+}
+
+.comtinuacionContenedor6{
+  border-top: solid 105px #3A4380 ;
+  background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/fondo_00azulOndaInferior.png);
+  background-size: cover;
+  background-position: center top;
+  height: 170px;
+}
+ .comtinuacionContenedor6 img{
+width:100%;
+}
+
+
+/*Sección FAQ, septima sección*/
+#section_7 {
+  background-color: #2CAEA3;
+  /*background-image: url(https://d3jqq3cy6vtj1r.cloudfront.net/Coordinador/DesafioFlash/imgPlatagorma/Fondos/preguntasFrecuentesFondo.png);*/
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+}
+
+.contenedorPreguntasFrecuentes{
+  margin-top: 50px;
+}
+
+.editRowPreguntasFrecuentes{
+  padding: 0% 5% 5% 5%;
+  font-size: 18px;
+}
+
+h2 {
+  font: 33px sans-serif;
+  text-align: center;
+}
+h2.linea2 {
+  position: relative;
+  z-index: 1;
+  margin-top:0!important;
+}
+h2.linea2:before {
+  border-top: 2px solid #fff;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  z-index: -1;
+}
+
+.tituloPreguntasFrecuentes{
+  display: inline-block;
+  background-color:#2CAEA3;
+  padding: 0 2%;
+}
+
+.preguntasFrecuentes{
+  text-transform: uppercase;
+  background-color:#208C83;
+  padding: 1% 3%;
+  margin:3px 0 0 0 ;
+}
+
+#section_7 .editRowPreguntasFrecuentes .respuestaFecuentes{
+  background-color: #269E94;
+  padding: 0% 5%;
+}
+
+.contenedorPreguntaRespuesta{
+  margin-top: 3px;
+}
+
+
+.preguntaAcriva{
+  background-color:#3A4380!important;
+}
+
+.respuestasInactivas{
+  display: none;
+}
+
+/*FAQS*/
+.faq_question {
+  cursor: pointer;
+}
+
+.faq_answer_container {
+  height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .logoDesafio{
+    margin-top: 50%;
+    margin-bottom: 5%;
+    width:100%;
+  }
+  .editRow {
+    padding: 60px 1% 2% 1%;
+  }
+  #section_3 .linkAParticipando, #section_3 .descargarBases{
+    font-size: 15px;
+    display: block;
+    margin:5px;
+  }
+  .contenedorDescargarBases{
+    padding:0;
+  }
+  .contenedorIconosParticipar{
+    padding: 0;
+  }
+  .titulos {
+    font-size: 30px;
+  }
+  .categorias{
+    height: 320px;
+    padding: 90px 10px 30px 12px;
+  }
+  .contenedorCategorias{
+    width: 50%;
+    float:left;
+  }
+  .parrafoEtapas, .parrafoEtapasFecha{
+    font-size: 17px;
+  }
+  .parrafoEtapasFecha{
+    font-size: 15px;
+  }
+  .numeroEtapa{
+    font-size: 15px;
+    padding:5px 25px;
+  }
+  .contenedorCadaEtapa{
+    margin-bottom: 10px;
+  }
+  .espacioEtapas {
+    padding: 2px 0px 0px 0px;
+  }
+  .btnPremiosParticipar{
+    font-size: 25px;
+    padding: 5px 90px;
+  }
+  .formularioDatosTaller{
+    padding: 0 5%;
+    color:#fff;
+  }
+  .contenedorBTNParticipa{
+    margin: 5% 0;
+  }
+  .contenedorTaller{
+    padding: 0px ;
+  }
+}
+
+.btnPremiosParticipar{
+font-size:23px;
+}
+
+#navbar{
+position:fixed!important;
+}
+
+.editRow {
+  padding: 130px 1% 2% 1%;
+}
+
+.editRowSection{
+  padding-top: 80px
+}
+
+.fractal-dynamic-nav-v1 .nav-children.li a, .fractal-dynamic-nav-v1 .nav-parent a {
+    text-transform: capitalize!important;
+   font-family: 'Montserrat', sans-serif!important;
+}
